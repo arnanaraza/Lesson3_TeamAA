@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "# Assignment Lesson 3\n# Arnan Araza & Francisco Arias\n# Jan 9 2017\n\n# Clear the workspace\nrm(list = ls())\n\n#Source out the function\nsource('R/LeapYearFunction.R')\n\n#Function call examples\nLeapYearFunction(1400) #will return 'year is out of range'\nLeapYearFunction(\"2000\") #will warn 'class of argument year must be numeric'\nLeapYearFunction(2001) #not a leap year, will return FALSE\nLeapYearFunction(2000) #a leap year, will return TRUE",
+    "created" : 1484144801073.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2174441223",
+    "id" : "B3B6EFE5",
+    "lastKnownWriteTime" : 1484145479,
+    "last_content_update" : 1484145479819,
+    "path" : "~/GRS 33806/GIT/Lesson3_TeamAA/mainR.R",
+    "project_path" : "mainR.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
