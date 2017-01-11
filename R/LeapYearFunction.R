@@ -1,6 +1,6 @@
-#Function to test whether a particular year is a leap year or not 
+#Function to test whether a particular year is a leap year or not year 
 
-LeapYearFunction <- function (year) {
+is.leap <- function (year) {
   if (!is.numeric(year)) {
     stop ("class of argument year must be numeric") #class control condition
     
@@ -8,14 +8,14 @@ LeapYearFunction <- function (year) {
   } else if  ((year %% 4 == 0) && (year %% 100 != 0) | (year %% 400 == 0)) {
       return (TRUE)  
     
+    #condition to set the range of the valid years
     } else if (year <= 1581) {
-      warning ('the year is out of range')
+      print ('the year is out of range')
       
+      #condition if the argument is not a leap year
       } else {
         return (FALSE)
       
         }
 }
 
-#Test Function Call
-LeapYearFunction (1400)
