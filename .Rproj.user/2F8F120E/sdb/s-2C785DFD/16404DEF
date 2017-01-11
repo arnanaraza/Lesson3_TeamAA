@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#Function to test whether a particular year is a leap year or not year \n\nis.leap <- function (year) {\n  #class control condition\n  if (!is.numeric(year)) {\n    stop (\"class of argument year must be numeric\") \n    \n  #test the conditions of a leap year: divisible by 4,  not divisible by 100 but is divisble by 400\n  } else if  ((year %% 4 == 0) && (year %% 100 != 0) | (year %% 400 == 0)) {\n      return (TRUE)  \n    \n  #condition to set the range of the valid years\n  } else if (year <= 1581) {\n      print ('the year is out of range')\n      \n  #condition if the argument is not a leap year\n  } else {\n    return (FALSE)\n      \n        }\n}\n\n",
+    "created" : 1484148421916.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3963073987",
+    "id" : "16404DEF",
+    "lastKnownWriteTime" : 1484149750,
+    "last_content_update" : 1484149750569,
+    "path" : "~/GRS 33806/GIT/Lesson3_TeamAA/R/LeapYearFunction.R",
+    "project_path" : "R/LeapYearFunction.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
